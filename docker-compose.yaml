@@ -12,7 +12,9 @@ services:
       TZ: ${GENERIC_TIMEZONE}
       N8N_RUNNERS_ENABLED: "true"
       N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
-      N8N_HOST: 0.0.0.0
+      N8N_HOST: ${N8N_HOST}
+      N8N_PORT: ${N8N_PORT}
+      N8N_LISTEN_ADDRESS: ${N8N_LISTEN_ADDRESS}
 
       DB_TYPE: postgresdb
       DB_POSTGRESDB_HOST: n8n-postgres
