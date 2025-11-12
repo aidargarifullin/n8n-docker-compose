@@ -29,7 +29,7 @@ services:
 
   n8n-postgres:
     image: postgres:14-alpine
-    container_name: postgres
+    container_name: n8n-postgres
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${DB_POSTGRESDB_USER}
